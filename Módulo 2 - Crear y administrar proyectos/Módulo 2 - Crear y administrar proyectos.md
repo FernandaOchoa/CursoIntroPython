@@ -41,7 +41,7 @@ El flujo de trabajo básico se ve así:
 * Ingresar al entorno virtual, donde especifique la versión de Python y las bibliotecas que necesita.
 * Desarrolla tu programa.
 
-Crear un entorno virtual
+### Crear un entorno virtual
 Para crear un entorno virtual, llame al módulo. El módulo espera un nombre como argumento.venv
 
 Sigue estos pasos:
@@ -67,4 +67,118 @@ En este punto, se crean algunos directorios:
 ```
 Tu entorno necesita el directorio ``venv`` para realizar un seguimiento de detalles como qué versión de Python y qué bibliotecas está utilizando. No coloque los archivos de programa en el directorio ``venv``. Te sugerimos que coloques tus archivos en el directorio ``src``o algo similar. La estructura del proyecto podría verse así:
 ```
+  /env
+  /src
+    program.py  
+```
+
+### Activar el entorno virtual
+
+En este punto, tienes un entorno virtual, pero no has comenzado a usarlo. Para usarlo, debes activarlo llamando ``activate`` a un script en tu directorio ``env``.
+
+Así es como puede verse la activación en distintos sistemas operativos.
+
+```
+  # Bash | Consola
+  # Windows
+  env\bin\activate
+
+  # Linux, WSL o macOS
+  source env/bin/activate
+```
+Llamar al comando ``activate`` cambia el mensaje de salida de la consola. Ahora está precedido con ``(env)`` y se parece a este ejemplo:
+
+``` 
+  # Bash | Consola
+  (env) -> path/to/project 
+```
+
+Ahora, ya estás dentro de tu entorno virtual. Cualquier cosa que hagas sucede de forma aislada.
+
+### ¿Qué es un paquete?
+Una de las principales ventajas de utilizar bibliotecas externas es acelerar el tiempo de desarrollo de tu programa. Puedes obtener una biblioteca de este tipo en Internet. Pero al buscar e instalar estas bibliotecas a través de un entorno virtual, te aseguras de instalar estas bibliotecas solo para el entorno virtual y no globalmente para toda la máquina.
+
+### Instalar un paquete
+Instalar un paquete mediante ``pip``. El comando ``pip`` utiliza el Python Package Index, o PyPi para abreviar, para saber dónde obtener los paquetes. Puedes visitar el sitio web de [PyPi](https://pypi.org/) para conocer qué paquetes están disponibles.
+
+Para instalar un paquete, ejecute , como en este ejemplo: pip install
+
+*Si estás desde un notebook se ejecuta así: ``!pip install python-dateutil ``* Con signo de admiración al inicio.
+
+```
+  # Bash | Consola
+  pip install python-dateutil
+```
+
+Si ejecutas el comando anterior, descargará e instalará ``dateutil``, un paquete para analizar el formato de archivo .yml. Después de instalar el paquete, puedes verlo en la lista si expande el directorio lib en env, así:
+
+```
+# Mensaje de salida en consola
+  /env
+    /lib
+      /dateutil
+```
+Para ver qué paquetes están ahora instalados en tu entorno virtual, puedes ejecutar ``pip freeze``. Este comando produce una lista de paquetes instalados en el terminal:
+
+*Si estás desde un notebook se ejecuta con signo de admiración al inicio. ``!pip freeze``*
+
+```
+# Mensaje de salida en consola
+  python-dateutil==2.8.2
+  six==1.16.0
+```
+
+Contiene algo más que sólo pipdate por que en sí misma se basan otras bibliotecas.
+
+Para asegurarte de que estos paquetes solo existen en tu entorno virtual, intenta salir de ese entorno llamando al comando ``deactivate``:
+
+```
+  # Bash | Consola
+  deactivate
+```
+
+Observa cómo cambia el mensaje de la terminal. Ya no está precedido por ``(env)`` y ha regresado a su estado anterior:
+
+```
+  # Bash | Consola
+  path/to/project
+```
+Si ejecutas el comando ``pip freeze``, verás una lista mucho más larga de dependencias. Esta lista indica que verás todos los paquetes instalados en tu máquina en lugar de solo lo que está instalado en tu entorno virtual.
+
+
+### Más formas de instalar un paquete
+
+También puedes utilizar los siguientes comandos para instalar un paquete:
+
+* Teniendo un conjunto de archivos en tu máquina e instalándolos desde esa fuente:
+  ```
+  # Bash | Consola
+  cd <to where the package is on your machine>
+  python3 -m pip install .
+  ```
+* Instalar desde un repositorio de GitHub que nos proporciona el control de versiones:
+  
+  ```
+  git+https://github.com/your-repo.git
+  ```
+* Instalar desde un archivo comprimido:
+
+  ```
+  python3 -m pip install package.tar.gz
+  ```
+
+### Usar un paquete instalado
+Ahora tienes un paquete instalado. ¿Cómo se usa en el código?
+
+Asegúrate de tener un directorio para tus archivos. Te sugerimos que llames al directorio (folder) src y agregues un archivo Python llamado app.py. Ahora agrega un poco de código para llamar al comando ``pipdate``:
+
+```
+  from datetime import *
+  from dateutil.relativedelta import *
+  now = datetime.now()
+  print(now)
+
+  now = now + relativedelta(months=1, weeks=1, hour=10)
+
+  print(now)
 ```
