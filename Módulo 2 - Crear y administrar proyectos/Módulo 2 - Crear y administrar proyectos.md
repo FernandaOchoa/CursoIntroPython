@@ -42,11 +42,13 @@ El flujo de trabajo básico se ve así:
 * Desarrolla tu programa.
 
 ### Crear un entorno virtual
-Para crear un entorno virtual, llame al módulo. El módulo espera un nombre como argumento.venv
+
+Para crear un entorno virtual, llama al módulo. El módulo espera un nombre como argumento venv.
 
 Sigue estos pasos:
 
-Ve al directorio donde deseas guardar tu proyecto. (Documentos/TuFolderPreferido)
+Desde tu terminal ve al directorio donde deseas guardar tu proyecto. (Documentos/TuFolderPreferido)
+Ejemplo en windows: ``cd Documents/TuFolderPreferido``
 
 Utiliza el siguiente comando para llamar al módulo ``venv``. El comando difiere ligeramente dependiendo de tu sistema operativo.
 
@@ -103,7 +105,7 @@ Instalar un paquete mediante ``pip``. El comando ``pip`` utiliza el Python Packa
 
 Para instalar un paquete, ejecute , como en este ejemplo: pip install
 
-*Si estás desde un notebook se ejecuta así: ``!pip install python-dateutil ``* Con signo de admiración al inicio.
+*Dato curioso: Si estás desde un notebook se ejecuta así: ``!pip install python-dateutil ``* Con signo de admiración al inicio. Sin embargo, no estamos trabajando con notebooks ahorita, estamos ejecutando todo por terminal (consola, bash, cli, cmd, como sea que le digas).
 
 ```
   # Bash | Consola
@@ -120,7 +122,7 @@ Si ejecutas el comando anterior, descargará e instalará ``dateutil``, un paque
 ```
 Para ver qué paquetes están ahora instalados en tu entorno virtual, puedes ejecutar ``pip freeze``. Este comando produce una lista de paquetes instalados en el terminal:
 
-*Si estás desde un notebook se ejecuta con signo de admiración al inicio. ``!pip freeze``*
+*Recuerda: Si deseas instalar un paquete desde un notebook se ejecuta con signo de admiración al inicio. ``!pip freeze``* Sin embargo, no estamos trabajando con notebooks ahorita, estamos ejecutando todo por terminal (consola, bash, cli, cmd, como sea que le digas).
 
 ```
 # Mensaje de salida en consola
