@@ -217,3 +217,13 @@ Ejecuta el bloque de código para determinar cuánto tiempo tardará en alcanzar
 Ajusta los valores de velocidad de inicio y fin, o la aceleración, para determinar cómo funcionará tu nave espacial.
 
 ¡Felicidades! Has creado con éxito el manual de una nave que muestra información útil sobre su nave espacial. Debido a que todo está contenido en un notebook de Jupyter, no tendrás ninguna dificultad para realizar un seguimiento de él, ya que está bien anotado y bien mostrado. ¡Incluso incluye un interruptor de encendido! Los notebooks Jupyter son una forma útil de mostrar todo tipo de datos e incluso pequeñas interfaces de usuario.
+
+
+Curso Propedútico de Python para Launch X - Innovacción Virtual.
+
+Material desarrollado con base en los contenidos de MSLearn y la metáfora de LaunchX, traducción e implementación por: Fernanda Ochoa - Learning Producer de LaunchX.
+
+Redes:
+* GitHub: [FernandaOchoa](https://github.com/FernandaOchoa)
+* Twitter: [@imonsh](https://twitter.com/imonsh)
+* Instagram: [fherz8a](https://www.instagram.com/fherz8a/)
