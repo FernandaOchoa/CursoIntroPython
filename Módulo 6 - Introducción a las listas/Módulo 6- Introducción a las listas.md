@@ -123,7 +123,7 @@ Hasta ahora, has estado usando nombres de planetas en una lista. Es posible que 
 
 La gravedad en la luna es de 0,166 G, por lo que los astronautas pueden saltar tan alto en la luna. La gravedad en Neptuno es de 1,12 G, por lo que saltar es más difícil. Incluso los atletas olímpicos tendrían dificultades para saltar más de 2 metros sobre Neptuno.
 
-![Planeta](../images/planet.png)
+![Planeta](https://raw.githubusercontent.com/FernandaOchoa/CursoIntroPython/main/images/planet.png)
 
 ### Almacenar números en listas
 Para almacenar números con decimales en Python, utilizamos el tipo ``float``. Para crear un float, introduzca el número con el decimal y asígnelo a una variable:
