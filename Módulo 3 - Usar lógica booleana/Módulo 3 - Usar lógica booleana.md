@@ -227,7 +227,7 @@ Puede conectar dos expresiones booleanas o de prueba mediante el operador boolea
 ```
 a = 23
 b = 34
-if a = 34 or b = 34:
+if a == 34 or b == 34:
     print(a + b)
 ```
 
@@ -247,7 +247,7 @@ Ambas condiciones de la expresión de prueba deben ser verdaderas para que toda 
 ```
 a = 23
 b = 34
-if a = 34 and b = 34:
+if a == 34 and b == 34:
     print (a + b)
 ```
 

@@ -22,7 +22,7 @@ Al final de este módulo, podrás:
 
 Aprovechar los notebooks como una herramienta para crear una experiencia de aprendizaje más interactiva.
 
-# Configurando el entrono de trabajo
+# Configurando el entorno de trabajo
 
 Hay muchas maneras de ejecutar notebooks. En varios de los módulos de este OnBoarding ejecutarás notebooks. En este módulo, sin embargo, aprenderás a configurar tu entorno de trabajo para ejecutar notebooks localmente a través de Visual Studio Code.
 
