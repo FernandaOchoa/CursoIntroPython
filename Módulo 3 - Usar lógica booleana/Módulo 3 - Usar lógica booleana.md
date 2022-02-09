@@ -181,12 +181,14 @@ else:
 Python también admite lógica condicional anidada, lo que significa que puedes anidar sentencias ``if ``, ``elif``, y ``else``, para crear programas aún más complejos. Para anidar condiciones, indenta las condiciones internas y todo lo que esté en el mismo nivel de sangría se ejecutará en el mismo bloque de código:
 
 ```
-a = 16
-b = 25
-c = 27
+a = 1611
+b = 21111
+c = 2211
 if a > b:
     if b > c:
         print ("a es mayor que b y b es mayor que c")
+    elif a > c:
+        print ("a es mayor que b y mayor que c")
     else: 
         print ("a es mayor que b y menor que c")
 elif a == b:
